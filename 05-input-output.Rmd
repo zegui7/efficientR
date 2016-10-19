@@ -268,7 +268,6 @@ df_co2_feather = read_feather("extdata/co2.feather")
 
 ```{r, engine='python', eval=FALSE}
 import feather
-import feather
 path = 'data/co2.feather'
 df_co2_feather = feather.read_dataframe(path)
 ```
