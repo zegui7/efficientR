@@ -217,8 +217,8 @@ file.info(bigfile) # file info (4 GB+)
 ### Preprocessing text outside R
 
 There are circumstances when datasets become too large to read directly into R.
-Reading in a $4$ GB text file using the functions tested above, for example, consumes all available RAM on an $16$ GB machine. To overcome this limitation, external *stream processing* tools can be used to preprocess large text files.
-The following command, using the Linux command line 'shell' (or Windows based Linux shell emulator [Cygwin](https://cygwin.com/install.html)) command `split`, for example, will break a large multi GB file many one GB chunks, each of which is more manageable for R:
+Reading in a $4$ GB text file using the functions tested above, for example, consumes all available RAM on a $16$ GB machine. To overcome this limitation, external *stream processing* tools can be used to preprocess large text files.
+The following command, using the Linux command line 'shell' (or Windows based Linux shell emulator [Cygwin](https://cygwin.com/install.html)) command `split`, for example, will break a large multi GB file into many one GB chunks, each of which is more manageable for R:
 
 ```{r, engine='bash', eval=FALSE}
 split -b100m bigfile.csv
